@@ -13,6 +13,10 @@ Such an order is then mapped to the Entity object of the processed order and sto
 An order can be made for an existing user or for a new user.
 If the order is executed for an already existing customer, 
 it is only necessary to provide thi his contract number and the data will be automatically withdrawn from the database.
+This service has the possibility of registering a new user.
+Authentication and Authorisation is realized via JWT tokens. 
+  * Login credentials  - ( data filled in when starting the application)   userName: admin  password: 1234
+
 
 
 * **config-server**   - service uses Spring Cloud Config Server for running configuration server in the native mode. The configuration files are placed on the classpath/shared.
