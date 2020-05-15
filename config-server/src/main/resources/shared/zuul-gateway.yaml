@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+zuul:
+  sensitiveHeaders: Cookie,Set-Cookie
+  routes:
+    product-catalogue-service:
+      path: /product-catalogue-service/**
+    customer-details-service:
+      path: /customer-details-service/**
+    order-taking-service:
+      path: /order-taking-service/**
+
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+  instance:
+    lease-renewal-interval-in-seconds: 30
+    lease-expiration-duration-in-seconds: 90
+

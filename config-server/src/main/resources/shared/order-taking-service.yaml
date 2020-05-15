@@ -1,0 +1,27 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/ordertaking?createDatabaseIfNotExist=true&useSSL=false&useUnicode=yes&characterEncoding=UTF-8
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      enabled: true
+
+  mail:
+    host: smtp.mailtrap.io
+    port: 2525
+    username: a59c1782c132b0
+    password: cacc9e27d52950
+
+twilio:
+  account_sid: AC0bb5729c6a17e8d5111f8c20fa25a8ba
+  auth_token: 833d744d6e1acd36b404ef78efccf845
+  trial_number: +16292098657

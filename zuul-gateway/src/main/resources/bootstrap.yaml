@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: zuul-gateway
+  cloud:
+    config:
+      uri: http://localhost:8888
+      fail-fast: true
+      password: 1234
+      username: user
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 240000
+
+ribbon:
+  ConnectTimeout: 60000
+  ReadTimeout: 60000
+  eager-load:
+    enabled: true

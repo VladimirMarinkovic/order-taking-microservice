@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: order-taking-service
+  cloud:
+    config:
+      uri: http://localhost:8888
+      fail-fast: true
+      password: 1234
+      username: user
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 6000
+        readTimeout: 6000
+  hystrix:
+    enabled: true
+
+twilio:
+  account_sid: AC0bb5729c6a17e8d5111f8c20fa25a8ba
+  auth_token: 833d744d6e1acd36b404ef78efccf845
+  trial_number: +16292098657
