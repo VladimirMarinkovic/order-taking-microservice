@@ -1,0 +1,28 @@
+
+http://localhost:8080/order-taking-service/order/processorder
+
+{
+	"customerContractNumber": "123456789",
+    "installationAddress": "Takovska",
+    "installationDate": "20-05-2020",
+    "timeSlotDetails": "20-05-2020 14:00:00",
+    "products": [
+        {
+            "productName": "Internet",
+            "chosenPackage": {
+                "packageName": "Net1"
+             
+            }
+            
+        },
+          {
+            "productName": "TV",
+            "chosenPackage": {
+                "packageName": "Tv1"
+             
+            }
+            
+        }
+      
+    ]
+}
