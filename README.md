@@ -23,7 +23,7 @@ Authentication and Authorisation is realized via JWT tokens.
 
 * **eureka-server**   - servce uses Spring Cloud Netflix Eureka as an embedded discovery server.
 
-* **gateway-service** - service uses Spring Cloud Netflix Zuul for running Spring Boot application that acts as a proxy/gateway.It uses Ribbon as Load Balancer.
+* **gateway-service** - service uses Spring Cloud Netflix Zuul for running Spring Boot application that acts as a proxy/gateway.
 
 
 * **Swager Documentation available on Gateway**
