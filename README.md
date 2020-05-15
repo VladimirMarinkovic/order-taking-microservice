@@ -2,11 +2,11 @@
 
 This application is built on the principle of microservice architecture.
 
-* **product-catalog-microservice **  - store and controls public information about the products and packages that are available in the company's offerings.
+* **product-catalog-microservice**  - store and controls public information about the products and packages that are available in the company's offerings.
 
-* **customer-details-microservice ** - store and controls the information of customers
+* **customer-details-microservice** - store and controls the information of customers
 
-* **order-taiking-microservice  ** - controls the processing and modification of orders. Consumes the other two microservices.  He also have responsible for authentication and authorization.
+* **order-taiking-microservice** - controls the processing and modification of orders. Consumes the other two microservices.  He also have responsible for authentication and authorization.
 This microservice accepts the order based on the order fulfillment request, which consists of a list of selected products and their individually selected package.
 Based on such a request, it finds selected products, their packages and attributes. Using product-catalog-microservice it maps such products into an order which it then serializes and processes in RabitMq. 
 Such an order is then mapped to the Entity object of the processed order and stored in a MySql database.
