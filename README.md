@@ -22,6 +22,12 @@ it is only necessary to provide thi his contract number and the data will be aut
 * **gateway-service** - service uses Spring Cloud Netflix Zuul for running Spring Boot application that acts as a proxy/gateway.It uses Ribbon as Load Balancer.
 
 
-
 * **Swager Documentation avaible on Gateway**
 http://localhost:8080/swagger-ui.html
+
+* **For testing purposes** - some data was populated using a command line runner. Product-catalog-microservice and Customer-details-microservice  use H2 in memory database, while for order-taiking-microservice it is necessary to have MySql running. 
+
+* **Kubernetes – deployment ** - will be ready in the next few days.
+
+
+
