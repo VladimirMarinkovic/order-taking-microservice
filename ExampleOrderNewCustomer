@@ -1,3 +1,6 @@
+http://localhost:8080/order-taking-service/order/processordernewcustomer
+
+
 {
     "customerDto": {
        "contractNumber": "9874561",
