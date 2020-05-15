@@ -10,9 +10,9 @@ This application is built on the principle of microservice architecture.
 This microservice accepts the order based on the order  request, which consists of a list of selected products(just names of products) and their individually selected package(name of package).
 Based on such a request, it finds selected products, their packages and attributes. Using product-catalog-microservice it maps such products (with all details of packages and their atributes) into an order which it then serializes and publish as a message in RabitMq. 
 Such an order is then mapped to the Entity object of the processed order and stored in a MySql database.
-An order can be made for an existing user or for a new user.
+An order can be made for an existing customer or for a new customer.
 If the order is executed for an already existing customer, 
-it is only necessary to provide thi his contract number and the data will be automatically withdrawn from the database.
+it is only necessary to provide thi his contract number and the data about him will be automatically withdrawn from the database.
 This service has the possibility of registering a new user.
 Authentication and Authorisation is realized via JWT tokens. 
   * Login credentials  - ( data filled in when starting the application)   userName: admin  password: 1234
