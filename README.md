@@ -31,41 +31,6 @@ http://localhost:8080/swagger-ui.html
 
 * **For testing purposes** - some data was populated using a command line runner. Product-catalog-microservice and Customer-details-microservice  use H2 in memory database, while for order-taiking-microservice it is necessary to have MySql running. 
 
-* **Example Post Order for New Customer** - localhost:8080/order-taking-service/order/processordernewcustomer
-{
-    "customerDto": {
-       "contractNumber": "9874561",
-       "firstName": "Vladimir",
-       "lastName": "Marinkovic",
-       "city": "Belgrade",
-       "address": "Streat 7",
-       "email": "vladimir@mail.com",
-       "telephone": "+38163123456"
-    },
-    "installationAddress": "Takovska",
-    "installationDate": "20-05-2020",
-    "timeSlotDetails": "20-05-2020 14:00:00",
-    "products": [
-        {
-            "productName": "Internet",
-            "chosenPackage": {
-                "packageName": "Net1"
-             
-            }
-            
-        },
-          {
-            "productName": "TV",
-            "chosenPackage": {
-                "packageName": "Tv1"
-             
-            }
-            
-        }
-      
-    ]
-}
-
 * **Kubernetes – deployment** - will be ready in the next few days.
 
 
