@@ -1,0 +1,55 @@
+ {
+        "customer": {
+            "id": "1",
+            "contractNumber": "123456789",
+            "firstName": "Marko",
+            "lastName": "Markovic",
+            "city": "Belgrade",
+            "address": "Streat 7",
+            "email": "marko@mail.com",
+            "telephone": "+38163123456"
+        },
+        "installationAddress": "Kneza Milosa",
+        "installationDate": "2020-05-12",
+        "timeSlotDetails": "2020-05-12T14:00",
+        "active": false,
+        "edited": false,
+        "products": [
+            {
+                "productId": "1",
+                "productName": "Internet",
+                "chosenPackage": {
+                    "packageId": "1",
+                    "packageName": "Net1",
+                    "packageAtributes": [
+                        {
+                            "packageAtributeName": "Speed",
+                            "packageAtributeValue": "250Mbps"
+                        },
+                        {
+                            "packageAtributeName": "Limit",
+                            "packageAtributeValue": "Unlimited"
+                        }
+                    ]
+                }
+            },
+            {
+                "productId": "2",
+                "productName": "TV",
+                "chosenPackage": {
+                    "packageId": "2",
+                    "packageName": "Tv1",
+                    "packageAtributes": [
+                        {
+                            "packageAtributeName": "Channels",
+                            "packageAtributeValue": "90"
+                        },
+                        {
+                            "packageAtributeName": "Rezolution",
+                            "packageAtributeValue": "4K"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
