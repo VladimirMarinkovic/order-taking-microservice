@@ -8,7 +8,7 @@ This application is built on the principle of microservice architecture.
 
 * **order-taiking-microservice** - controls the processing and modification of orders. Consumes the other two microservices.  He also have responsible for authentication and authorization.
 This microservice accepts the order based on the order  request, which consists of a list of selected products(just names of products) and their individually selected package(name of package).
-Based on such a request, it finds selected products, their packages and attributes. Using product-catalog-microservice it maps such products into an order which it then serializes and processes in RabitMq. 
+Based on such a request, it finds selected products, their packages and attributes. Using product-catalog-microservice it maps such products (with all details of packages and their atributes) into an order which it then serializes and publish as a message in RabitMq. 
 Such an order is then mapped to the Entity object of the processed order and stored in a MySql database.
 An order can be made for an existing user or for a new user.
 If the order is executed for an already existing customer, 
