@@ -31,7 +31,7 @@ http://localhost:8080/swagger-ui.html
 
 * **For testing purposes** - some data was populated using a command line runner. Product-catalog-microservice and Customer-details-microservice  use H2 in memory database, while for order-taiking-microservice it is necessary to have MySql running. 
 
-* **Kubernetes – deployment** - will be ready in the next few days.
+* **Kubernetes – deployment** - https://github.com/VladimirMarinkovic/order-taking-microservice-kubernetes
 
 
 
